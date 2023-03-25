@@ -12,16 +12,19 @@
 
 # Working Code:
 
-hours_worked = int(input("Enter the number of hours worked: "))
-overtime_pay = 30
-regular_pay = 20
-if hours_worked >= 40:
-    overtime_hours = hours_worked - 40
-    regular_hours = hours_worked - overtime_hours
-    overtime_pay = overtime_hours * overtime_pay
-    regular_pay = regular_hours * regular_pay
-    total_pay = overtime_pay + regular_pay
-    print("Your total pay is $", total_pay)
-else:
-    total_pay = hours_worked * regular_pay
-    print("Your total pay is $", total_pay)
+def output_paycheck_amount():
+    hours_worked = int(input("Enter the number of hours worked: "))
+    overtime_pay = 30
+    regular_pay = 20
+    if hours_worked >= 40:
+        overtime_hours = hours_worked - 40
+        regular_hours = hours_worked - overtime_hours
+        overtime_pay = overtime_hours * overtime_pay
+        regular_pay = regular_hours * regular_pay
+        total_pay = overtime_pay + regular_pay
+        print("Your total pay is $", total_pay)
+    else:
+        total_pay = hours_worked * regular_pay
+        print("Your total pay is $", total_pay)
+
+output_paycheck_amount(50)
