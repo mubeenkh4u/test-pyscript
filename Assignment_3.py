@@ -13,7 +13,7 @@
 # Working Code:
 
 def output_paycheck_amount(hours_worked):
-    hours_worked = int(input("Enter the number of hours worked: "))
+    hours_worked = 50 # int(input("Enter the number of hours worked: "))
     overtime_pay = 30
     regular_pay = 20
     if hours_worked >= 40:
